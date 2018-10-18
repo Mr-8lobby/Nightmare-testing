@@ -10,7 +10,6 @@ nightmare
   .type('#login-password', '')
   .click('#login-submit')
   .wait('#voyager-feed')
-//1702.68 pages (25 per page) = 42,567 candidates which the link suggests
 var runNext = function (i) {
   if (i < 41 ) {
     nightmare.goto('https://www.linkedin.com/' + (i*25))
